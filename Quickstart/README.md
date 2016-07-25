@@ -30,9 +30,9 @@ Learn about your Board-x board as well as how to prepare and set up for basic us
 
 The following subsections should describe how to get started with the Board-x using the release build shipped with the boards. The Board-x Development Board is ready to use “out of the box” with a pre-installed version of Android.
 
-<img src="http://i.imgur.com/Mdjs6Nx.png" data-canonical-src="http://i.imgur.com/Mdjs6Nx.png" width="250" height="160" />
-<img src="http://i.imgur.com/3EleXMR.png" data-canonical-src="http://i.imgur.com/3EleXMR.png" width="250" height="160" />
-<img src="http://i.imgur.com/p1N2nDt.png" data-canonical-src="http://i.imgur.com/p1N2nDt.png" width="250" height="160" />
+<img src="<Insert Board front image here" data-canonical-src="<Insert Board front image here>" width="250" height="160" />
+<img src="<Insert Board angle image here>" data-canonical-src="<Insert Board angle image here>" width="250" height="160" />
+<img src="<Insert Board back image here>" data-canonical-src="<Insert Board back image here>" width="250" height="160" />
 
 To get started you will need a power supply, an HDMI monitor, a USB keyboard and a USB mouse
 
@@ -53,27 +53,27 @@ If you are already familiar with the Board-x board and would like to change out 
 
 ## Features
 
-|   Component          |   Description                                                                            |
-|:---------------------|:-----------------------------------------------------------------------------------------|
-|  SoC                 |                                                                                          |
-|  CPU                 |                                                                                          |
-|  GPU                 |                                                                                          |
-|  RAM                 |                                                                                          |
-|  PMU                 |                                                                                          |
-|  Storage             |	                                                                                       |
-|  Ethernet Port       |                                                                                          |
-|  Wireless            |                                                                                          |
-|  USB                 |                                                                                          |
-|  Display             |                                                                                          |
-|  Video               |                                                                                          |
-|  Audio               |                                                                                          |
-|  Camera              |                                                                                          |
-|  Expansion Interface |                                                                                          |
-|  LED                 |	                                                                                       |
-|  Button              |                                                                                          |
-|  Power Source        |                                                                                          |
-|  OS Support          |	                                                                                       |
-|  Size                |	                                                                                       |
+|   Component          |   Description                                                       |
+|:---------------------|:--------------------------------------------------------------------|
+|  SoC                 |                                                                     |
+|  CPU                 |                                                                     |
+|  GPU                 |                                                                     |
+|  RAM                 |                                                                     |
+|  PMU                 |                                                                     |
+|  Storage             |	                                                                  |
+|  Ethernet Port       |                                                                     |
+|  Wireless            |                                                                     |
+|  USB                 |                                                                     |
+|  Display             |                                                                     |
+|  Video               |                                                                     |
+|  Audio               |                                                                     |
+|  Camera              |                                                                     |
+|  Expansion Interface |                                                                     |
+|  LED                 |	                                                                  |
+|  Button              |                                                                     |
+|  Power Source        |                                                                     |
+|  OS Support          |	                                                                  |
+|  Size                |	                                                                  |
 
 **IMPORTANT NOTES**
 
