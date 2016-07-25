@@ -5,21 +5,21 @@
  
 The current supplied Linux 3.18-based kernel supports the thermal protection framework and DVFS. If the thermal setpoint of the SoC is reached, the 2*A72/2.5GHz will reduce the core frequencies intelligently or shut down to reduce the power consumption. In an extreme case thermal shutoff will occur if DVFS has not been effective at reducing the SoC temperature to an acceptable level.
 
-Higher performance may be obtained by using forced air (fan) cooling on the Helio X20 Development Board.
+Higher performance may be obtained by using forced air (fan) cooling on the Board X Development Board.
 
 ### HDMI Port
 
-The HDMI port on Helio X20 Development Board supports TVs and Monitors with an HDMI interface at display resolutions of 1920*1080 pixels down to 640*480 pixels. Note that interlaceddisplay modes are not currently supported. The mobile SoC used on the Helio X20 Development Board does not have sufficiently flexible clocking arrangements to support allpossible HDMI timings specified by monitors. 
+The HDMI port on Board X Development Board supports TVs and Monitors with an HDMI interface at display resolutions of 1920*1080 pixels down to 640*480 pixels. Note that interlaceddisplay modes are not currently supported. The mobile SoC used on the Board X Development Board does not have sufficiently flexible clocking arrangements to support allpossible HDMI timings specified by monitors. 
 Note also that these modes are preferred and will be tried (in this order) first if they exist in EDID
 
 ### USB Ports 
 
-There are multiple USB ports on the Helio X20 Development Board:
+There are multiple USB ports on the Board X Development Board:
 One microUSB OTG port on the front edge of the board
 Two Type A USB 2.0 host ports on the front edge of the board
 One USB 2.0 host port on the high-speed expansion bus
 
-Please read the document Helio X20 Development Board-Hardware Manual.pdf for more information on the following hardware restrictions:
+Please read the document Board X Development Board-Hardware Manual.pdf for more information on the following hardware restrictions:
 The microUSB OTG port may be used (in host or slave mode) or the Type A host ports may be used. They may not both be used simultaneously. If a cable is inserted into the OTG port then the Type A ports and the expansion bus port will be automatically disabled.
 For the microUSB OTG port a single Low Speed (1.5Mbit/sec), Full Speed (12Mbit/sec) or High Speed (480Mbit/sec) device is supported.
 For the USB host ports all attached USB devices must be one of the following two options:
@@ -35,7 +35,7 @@ A switch is provided to change between USB 2.0 and USB Hub.
 
 ### UART Ports 
 
-Helio X20 supports a UART Port used for debugging, the Baud Rate for this interface should be set to 921600. 
+Board X supports a UART Port used for debugging, the Baud Rate for this interface should be set to 921600. 
 
 ## Known Issues 
 
