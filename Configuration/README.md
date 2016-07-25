@@ -1,7 +1,7 @@
 ## Configuration
 
-Execute unique configuraions to customize your Helio X20 experience
+Execute unique configuraions to customize your Board X experience
 
 ## Helpful Configurations
 
-< Insert custom Helio X20 specific configurations here >
+< Insert custom Board X specific configurations here >
