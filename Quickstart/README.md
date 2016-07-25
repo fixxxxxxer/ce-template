@@ -30,9 +30,7 @@ Learn about your Board-x board as well as how to prepare and set up for basic us
 
 The following subsections should describe how to get started with the Board-x using the release build shipped with the boards. The Board-x Development Board is ready to use “out of the box” with a pre-installed version of Android.
 
-<img src="<Insert Board front image here" data-canonical-src="<Insert Board front image here>" width="250" height="160" />
-<img src="<Insert Board angle image here>" data-canonical-src="<Insert Board angle image here>" width="250" height="160" />
-<img src="<Insert Board back image here>" data-canonical-src="<Insert Board back image here>" width="250" height="160" />
+<Insert Board images here>
 
 To get started you will need a power supply, an HDMI monitor, a USB keyboard and a USB mouse
 
