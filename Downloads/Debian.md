@@ -8,9 +8,6 @@
 
 |   SD Card Image   |    [Desktop]() or [Developer]()     |
 |:------------------|:------------------------------------|
-|Version:           | Month 20xx                          |
-|Release Date:      |20xx.xx.xx                           | 
-|Kernel Version:    |x.xx                                 |
 |Release Notes:     |[Link]()                             |
 
 Continue to [Installation page](../Installation/README.md)
@@ -29,14 +26,10 @@ Continue to [Installation page](../Installation/README.md)
 
 |   Boot image      |    [Download]()        |
 |:------------------|:-----------------------|
-|Version:           |Month 20xx              |
-|Release Date:      |20xx.xx.xx              | 
 |Release Notes:     |[Link]()                |
 
 |   Rootfs image    |    [Desktop]()                    |
 |:------------------|:----------------------------------|
-|Version:           |Month 20xx                         |
-|Release Date:      |20xx.xx.xx                         | 
 |Release Notes:     |[Link]()                           |
 
 Continue to [Installation page](../Installation/README.md)
