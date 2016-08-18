@@ -4,7 +4,7 @@ A comprehensive guide to using the [Board-x](96Boards.org product link here) Con
 
 ## Contents
 
-- [Quickstart](Quickstart/README.md)
+- [Getting Started](Quickstart/README.md)
    - Learn about your Board-x board, how to prepare and set up for basic use
 - [Installation](Installation/README.md)
    - Choose and install an operating system on your Board-x
