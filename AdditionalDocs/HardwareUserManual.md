@@ -1,4 +1,4 @@
-# Helio X20 Development Board Hardware User Manual
+# Board-X Development Board Hardware User Manual
 
 ### Table of Contents
 - [Table of Contents](#table-of-contents)
@@ -50,11 +50,15 @@
 
 ## Introduction
 
-The Helio X20 Development Board is a 96Boards compliant community board based on MediaTek HELIO X20 platform.The following table lists its key features:
+< A table listing the key features and components on the board >
+
+The Board-X Development Board is a 96Boards compliant community board based on MediaTek Board-X platform.The following table lists its key features:
 
 <img src="http://i.imgur.com/Mdjs6Nx.png" data-canonical-src="http://i.imgur.com/Mdjs6Nx.png" width="250" height="160" />
 <img src="http://i.imgur.com/3EleXMR.png" data-canonical-src="http://i.imgur.com/3EleXMR.png" width="250" height="160" />
 <img src="http://i.imgur.com/p1N2nDt.png" data-canonical-src="http://i.imgur.com/p1N2nDt.png" width="250" height="160" />
+
+< Example below - MediaTek X20 >
 
 - **Processor**:
    - MediaTek HELIO X20 MT6797
@@ -113,11 +117,13 @@ The Helio X20 Development Board is a 96Boards compliant community board based on
    - Operating Temp: -20°C to +45°C
    - RoHS and Reach compliant
 
-[Back to top](#helio-x20-development-board-hardware-user-manual)
+[Back to top]()
 
 ***
 
 ## What's in the Box
+
+< Add Pictures of the board, cables, sd cards, manual supplied in the box >
 
 The box contains one Helio X20 Development Board and a quick start guide.
 
@@ -125,11 +131,13 @@ The box contains one Helio X20 Development Board and a quick start guide.
 <img src="http://i.imgur.com/GZCNzUW.png" data-canonical-src="http://i.imgur.com/GZCNzUW.png" width="450" height="250" />
 
 
-[Back to top](#helio-x20-development-board-hardware-user-manual)
+[Back to top]()
 
 ***
 
 ## Board Overview
+
+< Add Pictures of the front, 45 degree angle front, and back of the board identifyinf the locations of key components on the board >
 
 | Position |    Reference    | Description                                               |
 |---------:|:---------------:|:----------------------------------------------------------|
@@ -160,21 +168,29 @@ The box contains one Helio X20 Development Board and a quick start guide.
 <img src="http://i.imgur.com/ydQmi5t.png" data-canonical-src="http://i.imgur.com/ydQmi5t.png" width="400" height="270" />
 <img src="http://i.imgur.com/CFM1kTb.png" data-canonical-src="http://i.imgur.com/CFM1kTb.png" width="400" height="270" />
 
-[Back to top](#helio-x20-development-board-hardware-user-manual)
+[Back to top]()
 
 ***
 
 ## System Block Diagram
 
+< Add a block diagram identifying how components on the board are connected to the SoC >
+
 <img src="http://i.imgur.com/YPYH7RJ.png" data-canonical-src="http://i.imgur.com/YPYH7RJ.png" width="750" height="480" />
 
-[Back to top](#helio-x20-development-board-hardware-user-manual)
+[Back to top]()
 
 ***
+
+## Jumpers/Switch Configurations
+
+< Add a diagram of the various Jumper banks and/or DIP switches and their meaning. Add a note on what should be the default settings for normal operation >
 
 ## Getting Started
 
 #### Prerequisites
+
+< Add a list of things needed to switch ON the board with the default SW >
 
 Before you power up your Helio X20 Development Board for the first time you will need the following:
 
@@ -185,7 +201,13 @@ Before you power up your Helio X20 Development Board for the first time you will
 - A computer keyboard with USB interface.
 - A computer mouse with USB interface.
 
+#### Known Limitations
+
+< Add a list of HW/SW limitations (e.g. OTG and Type A USB can’t be use simultaneously) >
+
 #### Starting the board for the first time 
+
+< Add a list of steps to switch ON the board for the first time including any warnings about jumper positions, connecting cables. A picture/block diagram showing how to connect the board for development is welcome >
 
 To start the board, follow these simple steps: 
 
@@ -196,16 +218,21 @@ To start the board, follow these simple steps:
 
 > Note: If set the first pin (AUTO_BOOT_SET) of switch SW3205 to the position ON, the Android system will start automatically when the power supply is plugged into the power outlet.
 
-[Back to top](#helio-x20-development-board-hardware-user-manual)
+[Back to top]()
 
 ***
 
 ## Component Details
 
 ### Processor
+
+< A short section describing the properties of the application processor >
+
 MT6797 is a highly integrated application processor which uses an industry-leading Tri-Cluster Deca-Core CPU Architecture. The chip integrates Dual-core ARM@Cortex-A72 MPCoreTM  operating at up to 2.3GHz, Quad-core ARM@Cortex-A53 MPCoreTM operating at up to 1.85GHz, Quad-core ARM@Cortex-A53 MPCoreTM  operating at up to 1.4GHz, Quad-core Mail T880 operating at up to 700MHz  and  an ARM@Cortex-R4 MCU . In addition, an extensive set of interfaces and connectivity peripherals are included to interface to cameras, touch-screen displays and MMC/SD cards.MT6797 also embodies wireless communication device, including WLAN, Bluetooth and GPS.
 
 ### PMIC
+
+< A short section describing the properties of the PMIC and part of the schematic and description of what regulators power what components >
 
 - There are a PMIC and two dedicated DC - DC converters for MT6797 platform.
 - MT6351 is a power management system chip, containing 8 buck converters and 31 LDOs. 
@@ -215,23 +242,33 @@ FAN53555 is high efficiency step-down switching regulator. It is applied to offe
 
 ### Memory (DRAM)
 
+< A short section describing how this board satisfied the 96board spec for RAM memory, clock speeds >
+
 The Helio X20 Development Board provides 2GB LPDDR3-SDRAM which is a 2-channel and 32bit width bus implementation interfacing directly to the MT6797 build-in LPDDR controller. The maximum DDR clock is 933MHz. It is mounted over the MT6797 using pop technology.
 
 ### Storage
+
+< It is mandatory to support a minimum of 4GB of storage through onboard flash, USB storage, Micro SDHC or SATA interface below >
 
 The Helio X20 Development Board provides an 8GB EMMC which is compliant with EMMC 5.1.
 
 ### Micro SDHC
 
+< A short section describing the properties of the uSDHC socket >
+
 The Helio X20 Development Board SD slot signals are routed directly to the MT6797 MSDC1 interface. It meets the SD3.0 standard.
 
 ### Boot ROM
+
+< A short section describing how this board satisfied the 96board spec for boot ROM flash specification version >
 
 The Helio X20 Development Board boots up from the EMMC.
 
 ### Networking
 
 #### WiFi
+
+< A short section describing the properties of WiFi chip, what additional features are supported >
 
 - Dual-band (2.4/5GHz) single stream 802.11 a/b/g/n/ac RF, 20/40/80MHz bandwidth.
 - Integrated 2.4GHz PA with max. 20dBm CCK output power, 5GHz PA OFDM 54Mbps output power 17dBm and VHT80 MCS9 output power 15dBm.
@@ -242,13 +279,21 @@ The Helio X20 Development Board also has a RF connector to connect the external 
 
 #### Bluetooth
 
+< A short section describing the properties of BLE chip, what additional features are supported >
+
 - Bluetooth specification V2.1+EDR, 3.0+HS and 4.1+HS compliant
 - Integrated PA with 8dBm (class 1) transmit power
 - Typical Rx sensitivity: GFSK -94dBm, DQPSK -93dBm, 8-DPSK -87.5dBm.
 
 #### GPS
 
+< A short section describing the properties of GPS chip, what additional features are supported >
+
 The GPS implementation is based on MTK connectivity chip MT6631 (U5003) supporting GPS, Galileo, Glonass and Beidou. It can receive GPS, Galileo, Beidou / Glonass simultaneously for more accurate positioning. But there is no GPS antenna on the board. You need to connect an external antenna to the RF connector CON5006.
+
+## Display Interface
+
+< A short section describing the how the board satisfies this requirement and if there are limitations when a mezzanine display board is connected. It is highly recommended to provide a block diagram showing how the SoC, external connectors and intermediate drivers/convertors are wired up >
 
 ### HDMI 
 
@@ -262,16 +307,22 @@ The GPS implementation is based on MTK connectivity chip MT6631 (U5003) supporti
 
 ### Camera Interface
 
+< A short section describing if the board satisfies this requirement and how. It is highly recommended to provide a block diagram showing how the SoC, external connectors and intermediate drivers/convertors are wired up >
+
 - The 96Boards specification calls for two camera interfaces.
 - The Helio X20 Development Board supports two camera interfaces, one with a 4-lane MIPI_CSI interface and one with 2-lane MIPI_CSI interface, meeting this requirement. The 4-lane MIPI_CSI interface can support 25M camera and the 2-lane MIPI_CSI interface can support 8M camera. 
 
 ### USB Ports
+
+< A short section describing the how the board satisfies these requirements, the type of ports available and if there are limitations e.g. host and slave ports can’t be used simultaneously >
 
 The Helio X20 Development Board supports a USB device port and three USB host ports via a USB MUX(U6503). The input channel( D+/D-) of USB MUX is connected to the P0 port of the SOC MT6797, and the two output channels(1D+/1D-,2D+/2D-) are connected to micro USB port and USB hub respectively. The three USB host ports are connected to the downstream ports of the USB hub.The control of U6503 is done via a software controlled GPIO (USB_SW_SEL, EINT9 from the SOC MT6797). When this signal is logic low, ‘0’, the USB data lines are routed to the Micro USB connector and the MT6797 P0 port is set to device mode. When ‘USB_SW_SEL’ is logic level high, ‘1’, the USB data lines are routed to U6401 (a 3-port USB HUB) and the MT6797 P0 port is set to host mode. The user can overwrite the software control by sliding switch 3 of dip-switch SW3205 to the ‘ON’ position. That action forces the USB–MUX (U6503) to route the USB data lines to the USB HUB. The overwrite option exists for the host mode only, you cannot hardware overwrite the MUX to force device mode. 
 
 <img src="http://i.imgur.com/IUigl3x.png" data-canonical-src="http://i.imgur.com/IUigl3x.png" width="750" height="480" />
 
 ### USB Host ports
+
+< Example >
 
 The Helio X20 Development Board supports three USB host port via a USB2.0 hub (U6401 USB2513-AEZG). Its upstream signal is connected to USB_P0 interface of MT6797.
 
@@ -281,15 +332,21 @@ The Helio X20 Development Board supports three USB host port via a USB2.0 hub (U
 
 ### USB Device ports
 
+< Example >
+
 The Helio X20 Development Board implements a device port. The port is located at CON6403, a Micro USB type B. It is routed to USB_P0 interface of MT6797.
 
 > Note: the board can work in one mode at a time, Host mode or Device mode, not both. 
 
 ### Audio
 
+< A short section describing the how the board satisfies these requirements and any additional functionality exposed >
+
 The Helio X20 Development Board has four audio ports: BT, HDMI, PCM and analog port. The analog port which connected to MT6351 includes a stereo handset IO and two analog audio outputs.
 
 ### DC Power
+
+< A short section describing the how the board satisfies these requirements and if there are any limitations >
 
 The Helio X20 Development Board can be powered by two ways:
 
@@ -297,6 +354,8 @@ The Helio X20 Development Board can be powered by two ways:
 - 8V to 18V supply from the DC_IN pins on the Low Speed Expansion Connector(CON7001)
 
 ### Power Measurement
+
+< A short section describing the how the board satisfies these requirements, any precautions to take while measuring and any additional measurement points that are exposed >
 
 The Helio X20 Development Board has three current sense resistors R916\ R923\ R924.
 
@@ -308,66 +367,80 @@ The Helio X20 Development Board has three current sense resistors R916\ R923\ R9
 
 ### External Fan Connection
 
+< A short section describing the how the board satisfies these requirements >
+
 The 96Boards specification calls for support for an external fan. That can be achieved by using the 5V or the SYS_DCIN (12V), both present on the Low Speed Expansion connector.
 
 ### UART
+
+< A short section describing the how the board satisfies these requirements and if the UART is routed to a onboard header as well, steps to enable the functionality >
 
 The Helio X20 Development Board has two UART ports (UART1 / UART0), both present on the Low Speed Expansion connector. They are routed to the UART1 (UART1_TxD, UART1_RxD) and UART0 (UART0_TxD, UART0_RxD, UART0_CTS, UART0_RTS) interface of MT6797 separately. The UART1 is used for the serial console output.
 
 ### Buttons
 
+< A short section describing the how the board satisfies these requirements, possible configuration of button behaviour through a switch or jumper >
+
 The Helio X20 Development Board presents four buttons. They are Power key,VOL up key,VOL down key and Reset key. The power ON/OFF and RESET signals are also routed to the Low Speed Expansion connector.
 
 #### Power Button 
+
+< Example >
 
 The push-button SW3201 serves as the power-on/sleep button. Upon applying power to the board, press the power button for more than 3 seconds, the board will boot up. Once the board is running you can turn power-off by pressing the power button for more than 3 seconds. If the board is in a sleep mode, pressing the power bottom will wake up the board. Oppositely, if the board is in an active mode, pressing the power bottom will change the board into sleep mode. 
 
 #### Reset Button
 
+< Example >
+
 The push-button SW3204 serves as the hardware reset button. press the button for more than 1 seconds,the system will be rebooted.
 
 #### Volume up
+
+< Example >
 
 The Volume UP button is used to control the output speaker volume of the Helio X20 Development Board. 
 
 #### Volume down
 
+< Example >
+
 The Volume Down button is used to control the output speaker volume of the Helio X20 Development Board. 
 
-#### Dip-switch
-
-There is a four-channel dip-switch(SW3205) on the board.
-
-- Channel 1:”AUTO BOOT”,used to boot the board automatically. If  set the switch on , the system will start automatically when the power supply is plugged into the power outlet. 
-- Channel 2:NC.
-- Channel 3:”USB HOST SET”,The user can overwrite the software control by sliding the switch to the ‘ON’ position.The overwrite option exists for the host mode only, you cannot hardware overwrite the MUX to force device mode. 
-- Channel 4: NC
-
-
 ### LED Indicators
+
+< A short section describing the how the board satisfies these requirements,  what the use-configurable LEDs are configured to do, how to change them >
 
 The Helio X20 Development Board has six LEDs.
 
 #### Two activity LEDs
+
+< Example >
 
 - WiFi activity LED –The Helio X20 Development Board drives this Yellow LED via BPI_BUS12, an IO from MT6797. 
 - BT activity LED –The Helio X20 Development Board drives this Blue LED via BPI_BUS13, an IO from MT6797. 
 
 #### Four User LEDs
 
+< Example >
+
 The four user LEDs are surface mount Green in 0603 size located next to the micro USB connector. The Helio X20 Development Board drives the four LEDs from the MT6797 GPIO: BPI_BUS8, BPI_BUS9，BPI_BUS10 and BPI_BUS11.
 
 ### Additional Functionality
 
+< Use this section to describe any additional functionality you’ve added to the board besides what is mandated in the 96boards spec, each in their own sub-section e.g. JTAG, GPS, Mic, SATA, PCIe, additional expansion connectors >
+
 The Helio X20 Development Board also has a additional interface (CON9001)for user debugging. It includes JTAG , UART0 and UART1 interface. The position is reserved, but the component is not mounted in the mass production. The component of CON9001 is AXT640124 produced by Panasonic. This interface should be used with the MTK debug board.
 
-[Back to top](#helio-x20-development-board-hardware-user-manual)
+[Back to top]()
 
 ***
 
 ## Expansion Connectors
 
 ### Low Speed Expansion Connector
+
+< Add a table that maps the 96boards signals on the low-speed connector to the SoC signals. Mention the voltage level as a courtesy though they’re defined to be 1.8V in the spec. Add any notes as applicable on how to use the various outputs with relevant schematics >
 
 |  Helio X20 Signals  |  96Boards Signals |  PIN  |  PIN  |  96Boards Signals  |  Helio X20 Signals  |
 |:--------------------|:------------------|:------|------:|-------------------:|--------------------:|
@@ -394,16 +467,22 @@ The Helio X20 Development Board also has a additional interface (CON9001)for use
 
 ### UART {0/1} 
 
+< Example >
+
 - The 96Boards specifications calls for a 4-wire UART implementation, UART0 and an optimal second 2-wire UART, UART1 on the Low Speed Expansion Connector. 
 - The Helio X20 Development Board implements UART0 as a 4-wire UART that connects directly to the MT6797 SoC. These signals are driven at 1.8V. 
 - The Helio X20 Development Board implements UART1 as a 2-wire UART that connects directly to the MT6797 SoC. These signals are driven at 1.8V. 
 
 ### I2C {0/1} 
 
+< Example >
+
 - The 96Boards specification calls for two I2C interfaces to be implemented on the Low Speed Expansion Connector. 
 - The Helio X20 Development Board implements both interfaces named I2C4 and I2C5. They connect directly to the MT6797 SoC. Each of the I2C lines is pulled up to VIO18_PMU via 4.7K resistor.
 
 ### GPIO {A-L} 
+
+< Example >
 
 The 96Boards specification calls for 12 GPIO lines to be implemented on the Low Speed Expansion Connector. Some of these GPIOs may support alternate functions for DSI/CSI control 
 
@@ -424,15 +503,21 @@ The Helio X20 board implements this requirement. All GPIOs are routed to the MT6
 
 ### SPI 0 
 
+< Example >
+
 - The 96Boards specification calls for one SPI bus master to be provided on the Low Speed Expansion Connector. 
 - The Helio X20 Development Board implements a full SPI master with 4 wires, CLK, CS, MOSI and MISO. The signals are connected directly to the MT6797 SoC and driven at 1.8V. 
 
 ### PCM/I2S
 
+< Example >
+
 - The 96Boards specification calls for one PCM/I2S bus to be provided on the Low Speed Expansion Connector. The CLK, FS and DO signals are required while the DI is optional. 
 - The Helio X20 Development Board implements a PCM/I2S interface with 4 wires, CLK, FS, DO and DI. The signals are connected directly to the MT6797 SoC and driven at 1.8V.  
 
 ### Power and Reset 
+
+< Example >
 
 - The 96Boards specification calls for a signal on the Low Speed Expansion Connector that can power on/off the board and a signal that serves as a board reset signal. 
 - The Helio X20 Development Board routes the PWR_BTN_N (named PWRKEY on schematic) signal to the PWRKEY pin of the PMIC MT6351. This signal is driven by SW3201 as well, the on-board power on push-button switch.  A mezzanine implementation of this signals should not drive it with any voltage, the only allowed operation is to force it to GND to start the board from a sleep mode. 
@@ -440,6 +525,8 @@ The Helio X20 board implements this requirement. All GPIOs are routed to the MT6
 
 
 ### Power Supplies 
+
+< Example >
 
 The 96Boards specification calls for three power rails to be present on the Low Speed Expansion Connector: 
 - +1.8V  Max of 100mA 
@@ -453,11 +540,13 @@ The Helio X20 Development Board supports these requirements as follows:
  
 SYS_DCIN  Can serves as the board’s main power source or can receive power from the board. 
 
-[Back to top](#helio-x20-development-board-hardware-user-manual)
+[Back to top]()
 
 ***
 
 ## High Speed Expansion Connector
+
+< Add a table that maps the 96boards signals on the high-speed connector to the SoC signals. Mention the voltage level as a courtesy though they’re defined to be 1.8V in the spec. Add any notes as applicable on how to use the various outputs with relevant schematics>
 
 |  Helio X20 Signals |   96Boards Signals   |  PIN  |  PIN  |  96Boards Signals  |             Helio X20 Signals             |
 |:-------------------|:---------------------|:------|------:|-------------------:|------------------------------------------:|
@@ -494,10 +583,14 @@ SYS_DCIN  Can serves as the board’s main power source or can receive power fro
 
 ### MIPI DSI 0 
 
+< Example >
+
 - The 96Boards specification calls for a MIPI-DSI to be present on the High Speed Expansion Connector. A minimum of one lane is required and up to four lanes can be accommodated on the connector. 
 - The Helio X20 Development Board implementation supports a full four lane (1.2Gbps/lane) MIPI-DSI interface that is routed to the High Speed Expansion Connector. The MIPI-DSI signals are directly connected to DSI-0 of MT6797. 
 
 ### MIPI CSI {0/1} 
+
+< Example >
 
 - The 96Boards specification calls for two MIPI-CSI interfaces to be present on the High Speed Expansion Connector. Both interfaces are optional. CSI0 interface can be up to four lanes while CSI1 is up to two lanes. 
 - The Helio X20 Development Board implementation supports a full four lane MIPI-CSI interface on CSI0 and two lanes of MIPI-CSI on CSI1. All MIPI-CSI signals are routed directly to/from the MT6797SoC.  CSI0 can support up to 25M@30fps and CSI1 can support up to 8M@30fps. The max data rate of each lane is 2.5Gbps.
@@ -505,38 +598,56 @@ SYS_DCIN  Can serves as the board’s main power source or can receive power fro
 
 ### I2C {2/3} 
 
+< Example >
+
 - The 96Boards specification calls for two I2C interfaces to be present on the High Speed Expansion Connector. Both interfaces are optional unless a MIPI-CSI interface has been implemented. Then an I2C interface shall be implemented. 
 - The Helio X20 Development Board implementation supports two MIPI-CSI interfaces and therefore must support two I2C interfaces. For MIPI-CSI0 the companion I2C2 is routed directly from the MT6797SoC. For MIPI-CSI1, the companion I2C is I2C3. Each of the I2C lines is pulled up to VIO18_PMU via 4.7K resistor.
 
 ### SD/SPI 
+
+< Example >
 
 - The 96Boards specification calls for an SD interface or a SPI port to be part of the High Speed Expansion Connector. 
 - The Helio X20 Development Board implements a full SPI master with 4 wires (96Boards SPI Configuration), CLK, CS, MOSI and MISO. All the signals are connected directly to the MT6797 SoC. These signals are driven at 1.8V. 
 
 ### Clocks 
 
+< Example >
+
 - The 96Boards specification calls for one or two programmable clock interfaces to be provided on the High Speed Expansion Connector. These clocks may have a secondary function of being CSI0_MCLK and CSI1_MCLK. If these clocks can’t be supported by the SoC than an alternative GPIO or No-Connect is allowed by the specifications. 
 - The Helio X20 Development Board implements two CSI clocks which are connected directly to the MT6797 SoC. These signals are driven at 1.8V. 
 
 ### USB
+
+< Example >
 
 - The 96Boards specification calls for a USB Data line interface to be present on the High Speed Expansion Connector. 
 - The Helio X20 Development Board implements this requirement by routing USB channel 3 from the USB HUB to the High Speed Expansion Connector. 
 
 ### HSIC 
 
+< Example >
+
 - The 96Boards specification calls for an optional MIPI-HSIC interface to be present on the High Speed Expansion Connector. 
 - The Helio X20 Development Board implementation doesn’t support this optional requirement. 
 
 ### Reserved 
 
+< Example >
+
 The pin 60 of the High Speed Expansion Connector is pulled up to VIO18_PMU via 100K resistor.
 
-[Back to top](#helio-x20-development-board-hardware-user-manual)
+[Back to top]()
 
 ***
 
+## Others
+
+< Use this section to describe any additional expansion connectors and how to use the signals on them>
+
 ## Analog Expansion Connector
+
+< Example >
 
 |  PIN  |  Helio X20 Signals  |    Helio X20 Signals                               |
 |------:|--------------------:|---------------------------------------------------:|
@@ -557,7 +668,7 @@ The pin 60 of the High Speed Expansion Connector is pulled up to VIO18_PMU via 1
 |   15  |   FM_RX_N_6631      |    FM antenna negative output                      |
 |   16  |   AU_HSN            |    Headset negative output                         |
 
-[Back to top](#helio-x20-development-board-hardware-user-manual)
+[Back to top]()
 
 ***
 
@@ -565,9 +676,13 @@ The pin 60 of the High Speed Expansion Connector is pulled up to VIO18_PMU via 1
 
 ### Block Diagram
 
+< Please provide a block diagram showing how power is routed from various sources to PMIC and then to SoC, expansion connectors, the intermediate regulators >
+
 <img src="http://i.imgur.com/EzSF6WF.png" data-canonical-src="http://i.imgur.com/EzSF6WF.png" width="750" height="480" />
 
 ### DC Power Input
+
+< Additional details and schematics related to power conditioning circuitry to allow hobbyists from power from other sources >
 
 - An 8V to 18V power from a dedicated DC jack J901. 
 - An 8V to 18V power from the SYS_DCIN pins on the Low Speed Expansion Connector CON7001. 
@@ -578,6 +693,8 @@ The pin 60 of the High Speed Expansion Connector is pulled up to VIO18_PMU via 1
 
 ### Power Source Selection and Sequencing
 
+< Describe any priority mechanism in selection of power source if any and the sequence in which power will be provided to the various components before getting to the SoC. Describe any customisation if possible. A sequence diagram will also be useful to provide >
+
 The user of the Helio X20 Development Board should never apply power to the board from J901 and the Low Speed Expansion connector at the same time. There is no active or passive mechanism on the Helio X20 Development Board to prioritize one source over the other.
 
 <img src="http://i.imgur.com/DnnDJkk.png" data-canonical-src="http://i.imgur.com/DnnDJkk.png" width="750" height="480" />
@@ -585,16 +702,22 @@ The user of the Helio X20 Development Board should never apply power to the boar
 
 ### Voltage Rails
 
+< List of independent voltage rails from the PMIC, what components the provide power to, voltage values and schematic showing how the core and peripheral power is supplied on the board. Also useful to note the probe points where these voltages can be measured >
+
 <Insert Table here>
 
-[Back to top](#helio-x20-development-board-hardware-user-manual)
+[Back to top]()
 
 ***
 
 ## Mechanical Specification
 
+< Add a drawing showing the mechanical layout, dimensions, distance between mounting holes, max. component height >
+
 ### 2D Reference Drawing
+
+< Example >
 
 <img src="http://i.imgur.com/IdPzJTU.png" data-canonical-src="http://i.imgur.com/IdPzJTU.png" width="750" height="480" />
 
-[Back to top](#helio-x20-development-board-hardware-user-manual)
+[Back to top]()
