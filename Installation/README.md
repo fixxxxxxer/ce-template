@@ -34,7 +34,9 @@ Go to the [Downloads page](../Downloads/README.md) to get your SD card image.
 
 Choose host machine
 
-###### This method is not available for the Board X
+- [Linux](LinuxSD.md)
+- [Mac](MacSD.md)
+- [Windows](WindowsSD.md)
 
 ***
 
@@ -55,7 +57,6 @@ Go to the [Downloads page](../Downloads/README.md) to get your bootloader, boot 
 Choose host machine
 
 - [Linux](LinuxFastboot.md)
-- [Windows](WindowsFastboot.md)
 
 ***
 
