@@ -32,11 +32,16 @@ Learn about your Board-X board as well as how to prepare and set up for basic us
 
 The following subsections should describe how to get started with the Board-X using the release build shipped with the boards. The Board-X board is ready to use “out of the box” with a preinstalled version of the Debian Linux distribution.
 
+< Please send all HD board images to robert.wolff@linaro.org to have these replaced >
+
 <img src="http://i.imgur.com/uKfxuu5.jpg" data-canonical-src="http://i.imgur.com/uKfxuu5.jpg" width="250" height="160" />
 <img src="http://i.imgur.com/g5X5j72.jpg" data-canonical-src="http://i.imgur.com/g5X5j72.jpg" width="250" height="160" />
 <img src="http://i.imgur.com/egwXwjX.jpg" data-canonical-src="http://i.imgur.com/egwXwjX.jpg" width="250" height="160" />
 
 ## Features
+
+< Please add descriptions to table, example "Getting Started" page can be found here: >
+< https://github.com/96boards/documentation/blob/master/ConsumerEdition/DragonBoard-410c/Quickstart/README.md >
 
 |   Component          |   Description                                                                                    |
 |:---------------------|:-------------------------------------------------------------------------------------------------|
@@ -62,7 +67,7 @@ The following subsections should describe how to get started with the Board-X us
 
 **IMPORTANT NOTES**
 
-<Insert Board-X Important notes - Example Below>
+< Insert Board-X Important notes - Example Below - This section should be monitored by board maintainers. This information should be periodically updated. Please treat this section as a "News" section. Important notes should consist of thing you think end user MUST KNOW to minimize unnecessary support questions >
 
 - HDMI EDID display data is used to determine the best display resolution. On monitors and TVs that support 1080p (or 1200p) this resolution will be selected. If 1080p is not supported the next available resolution reported by EDID will be used. This selected mode will work with **MOST but not all** monitors/TVs. 
 - There are limitations on the usage of the USB ports on the Board-X board.
@@ -71,7 +76,7 @@ The following subsections should describe how to get started with the Board-X us
 
 ## Starting the board for the first time
 
-<Insert Board-X Initial Start up instructions - Example below>
+< Insert Board-X Initial Start up instructions - Example below >
 
 **The Board-X comes preloaded with Debian Linux and can be up and running with a few simple steps:**
 
@@ -85,6 +90,8 @@ The following subsections should describe how to get started with the Board-X us
 ***
 
 ## Updating to a new release or change your operating system
+
+<Do not touch this section>
 
 If you are already familiar with the Board-X board and would like to change out the stock operating system, please proceed to one of the following pages:
 
