@@ -4,4 +4,4 @@ Explore what makes your Board X unique by checking out technical specifications,
 
 ## User Guides
 
-- Hardware User Manual ([View]() / [Download]())
+- User Manual ([View](HardwareUserManual.md))
