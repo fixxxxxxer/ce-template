@@ -41,6 +41,7 @@ The following subsections should describe how to get started with the Board-X us
 ## Features
 
 < Please add descriptions to table, example "Getting Started" page can be found here: >
+
 < https://github.com/96boards/documentation/blob/master/ConsumerEdition/DragonBoard-410c/Quickstart/README.md >
 
 |   Component          |   Description                                                                                    |
