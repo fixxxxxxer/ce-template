@@ -4,5 +4,4 @@ Explore what makes your Board X unique by checking out technical specifications,
 
 ## User Guides
 
-- Getting Started ([View]() / [Download]())
-- Software Manual ([View]() / [Download]())
+- Hardware User Manual ([View]() / [Download]())
