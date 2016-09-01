@@ -13,9 +13,9 @@ A comprehensive guide to using the [Board-x](96Boards.org product link here) Con
 - [Configuration](Configuration/README.md)
    - Execute unique configurations to customize your Board-x experience
 - [Hardware Documentation](HardwareDocs/README.md)
-   - Explore what makes your DragonBoard 410c unique, technical specifications, schematics, hardware notes and more...
+   - Explore what makes your Board-x unique, technical specifications, schematics, hardware notes and more...
 - [Additional Documentation](AdditionalDocs/README.md)
-   - Discover our list of sponsored DragonBoard 410c documents, these include User Guides and Application notes
+   - Discover our list of sponsored Board-x documents, these include User Guides and Application notes
 - [Troubleshooting](Troubleshooting/README.md)
    - From bug reports and current issues, to forum access and other useful resources, we want to help you find answers   
 
