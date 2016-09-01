@@ -5,6 +5,8 @@ Learn about your Board-X board as well as how to prepare and set up for basic us
 ## Setup - What you will need
 
 **Need**
+- [Board-X](Insert Board-X 96Boards.org landing page link here)
+   - Board based on the XXXXXXX Processor
 - [Power adapter](PowerAdapter.md)
    - 96Boards specifications requires a 8V-18V with 2000mA Power adapter
 - [USB Keyboard and Mouse](USBKeyBoardMouse.md)
