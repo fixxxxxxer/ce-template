@@ -68,7 +68,7 @@ The following subsections should describe how to get started with the Board-X us
 
 **IMPORTANT NOTES**
 
-< Insert Board-X Important notes - Example Below - This section should be monitored by board maintainers. This information should be periodically updated. Please treat this section as a "News" section. Important notes should consist of thing you think end user MUST KNOW to minimize unnecessary support questions surrounding the out of box experience on shipped stock image >
+< Insert Board-X Important notes - Example Below - This section should be monitored by board maintainers. This information should be periodically updated. Please treat this section as a "News" section. Important notes should consist of thing you think end user MUST KNOW to minimize unnecessary support questions surrounding the out of box experience with shipped stock image >
 
 - HDMI EDID display data is used to determine the best display resolution. On monitors and TVs that support 1080p (or 1200p) this resolution will be selected. If 1080p is not supported the next available resolution reported by EDID will be used. This selected mode will work with **MOST but not all** monitors/TVs. 
 - There are limitations on the usage of the USB ports on the Board-X board.
