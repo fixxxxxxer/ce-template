@@ -9,7 +9,7 @@ Explore what makes your Board-X unique, technical specifications, schematics, ha
 - BOM ([View]() / [Download]())
 - Schematics ([View]() / [Download]())
 
-#### BB2260 Processor documents
+#### Board-X Processor documents
 
 < If these documents exist >
 
