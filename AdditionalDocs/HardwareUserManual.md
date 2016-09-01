@@ -1,4 +1,4 @@
-# Board-X Development Board Hardware User Manual
+# Board-X Development Board User Manual
 
 ### Table of Contents
 - [Table of Contents](#table-of-contents)
