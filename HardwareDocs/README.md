@@ -8,6 +8,7 @@ Explore what makes your Board-X unique, technical specifications, schematics, ha
 
 - BOM ([View]() / [Download]())
 - Schematics ([View]() / [Download]())
+- [Hardware Notes](HardwareNotes.md)
 
 #### Board-X Processor documents
 
