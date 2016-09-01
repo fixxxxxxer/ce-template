@@ -50,9 +50,11 @@
 
 ## Introduction
 
-< A table listing the key features and components on the board >
+< A list of key features and components on the board >
 
 The Board-X Development Board is a 96Boards compliant community board based on MediaTek Board-X platform.The following table lists its key features:
+
+< Please send the appropriate images to robert.wolff@linaro.org >
 
 <img src="http://i.imgur.com/Mdjs6Nx.png" data-canonical-src="http://i.imgur.com/Mdjs6Nx.png" width="250" height="160" />
 <img src="http://i.imgur.com/3EleXMR.png" data-canonical-src="http://i.imgur.com/3EleXMR.png" width="250" height="160" />
@@ -123,7 +125,9 @@ The Board-X Development Board is a 96Boards compliant community board based on M
 
 ## What's in the Box
 
-< Add Pictures of the board, cables, sd cards, manual supplied in the box >
+< Add Pictures of the board, cables, sd cards, manual supplied in the box - This example shows the MediaTek X20 along side a picture of the user manual which comes in the box >
+
+< Please send any images to robert.wolff@linaro.org >
 
 The box contains one Helio X20 Development Board and a quick start guide.
 
@@ -165,6 +169,8 @@ The box contains one Helio X20 Development Board and a quick start guide.
 |    17    |     CON5006     |   GPS Antenna connector                                   |
 |    18    |     SW3205      |   Switch for Auto boot and USB HOST set                   |
 
+< Please send any images to robert.wolff@linaro.org >
+
 <img src="http://i.imgur.com/ydQmi5t.png" data-canonical-src="http://i.imgur.com/ydQmi5t.png" width="400" height="270" />
 <img src="http://i.imgur.com/CFM1kTb.png" data-canonical-src="http://i.imgur.com/CFM1kTb.png" width="400" height="270" />
 
@@ -175,6 +181,8 @@ The box contains one Helio X20 Development Board and a quick start guide.
 ## System Block Diagram
 
 < Add a block diagram identifying how components on the board are connected to the SoC >
+
+< Please send any images to robert.wolff@linaro.org >
 
 <img src="http://i.imgur.com/YPYH7RJ.png" data-canonical-src="http://i.imgur.com/YPYH7RJ.png" width="750" height="480" />
 
@@ -317,6 +325,8 @@ The GPS implementation is based on MTK connectivity chip MT6631 (U5003) supporti
 < A short section describing the how the board satisfies these requirements, the type of ports available and if there are limitations e.g. host and slave ports can’t be used simultaneously >
 
 The Helio X20 Development Board supports a USB device port and three USB host ports via a USB MUX(U6503). The input channel( D+/D-) of USB MUX is connected to the P0 port of the SOC MT6797, and the two output channels(1D+/1D-,2D+/2D-) are connected to micro USB port and USB hub respectively. The three USB host ports are connected to the downstream ports of the USB hub.The control of U6503 is done via a software controlled GPIO (USB_SW_SEL, EINT9 from the SOC MT6797). When this signal is logic low, ‘0’, the USB data lines are routed to the Micro USB connector and the MT6797 P0 port is set to device mode. When ‘USB_SW_SEL’ is logic level high, ‘1’, the USB data lines are routed to U6401 (a 3-port USB HUB) and the MT6797 P0 port is set to host mode. The user can overwrite the software control by sliding switch 3 of dip-switch SW3205 to the ‘ON’ position. That action forces the USB–MUX (U6503) to route the USB data lines to the USB HUB. The overwrite option exists for the host mode only, you cannot hardware overwrite the MUX to force device mode. 
+
+< Please send any images to robert.wolff@linaro.org >
 
 <img src="http://i.imgur.com/IUigl3x.png" data-canonical-src="http://i.imgur.com/IUigl3x.png" width="750" height="480" />
 
@@ -678,6 +688,8 @@ The pin 60 of the High Speed Expansion Connector is pulled up to VIO18_PMU via 1
 
 < Please provide a block diagram showing how power is routed from various sources to PMIC and then to SoC, expansion connectors, the intermediate regulators >
 
+< Please send any images to robert.wolff@linaro.org >
+
 <img src="http://i.imgur.com/EzSF6WF.png" data-canonical-src="http://i.imgur.com/EzSF6WF.png" width="750" height="480" />
 
 ### DC Power Input
@@ -689,6 +701,8 @@ The pin 60 of the High Speed Expansion Connector is pulled up to VIO18_PMU via 1
 
 > Note: Please refer to the mechanical size of the DC plug below.The inside diameter of the plug is 1.7mm，the outer diameter of the plug is 4.75mm.The positive electrode of the DC plug is in the inside, and the negative pole is outside.
 
+< Please send any images to robert.wolff@linaro.org >
+
 <img src="http://i.imgur.com/7qEu1Jc.png" data-canonical-src="http://i.imgur.com/7qEu1Jc.png" width="250" height="160" />
 
 ### Power Source Selection and Sequencing
@@ -697,6 +711,8 @@ The pin 60 of the High Speed Expansion Connector is pulled up to VIO18_PMU via 1
 
 The user of the Helio X20 Development Board should never apply power to the board from J901 and the Low Speed Expansion connector at the same time. There is no active or passive mechanism on the Helio X20 Development Board to prioritize one source over the other.
 
+< Please send any images to robert.wolff@linaro.org >
+
 <img src="http://i.imgur.com/DnnDJkk.png" data-canonical-src="http://i.imgur.com/DnnDJkk.png" width="750" height="480" />
 
 
@@ -704,7 +720,54 @@ The user of the Helio X20 Development Board should never apply power to the boar
 
 < List of independent voltage rails from the PMIC, what components the provide power to, voltage values and schematic showing how the core and peripheral power is supplied on the board. Also useful to note the probe points where these voltages can be measured >
 
-<Insert Table here>
+| Circuit Type | Net Name            | Default ON Voltage(V)  | Iout Max (mA)  | Expected use                                      |
+|--------------|---------------------|------------------------|----------------|---------------------------------------------------|
+| BUCK         |  SYS_5V             | 5                      | 6000           | system 5V                                         |
+|              |  VBAT               | 4.2                    | 6000           | system power                                      |
+|              |  DVDD_PROC1         | 0.6 ~ 1.3              | 10000          | Core power for Processor of MT6797                |
+|              |  DVDD_PROC2         | 0.6 ~ 1.3              | 10000          |                                                   |
+|              |  DVDD_GPU           | 0.6 ~ 1.3              | 5000           | Core power for GPU of MT6797                      |
+|              |  DVDD_MODEM         | 0.9                    | 1200           | BB1&AP MCU of MT6797                              |
+|              |  VDRAM_PMU          | 1                      | 3000           | DRAM of MT6797                                    |
+|              |  DVDD_CORE          | 1                      | 3000           | core AP Core of MT6797                            |
+|              |  DVDD_MDI           | 0.9                    | 1200           | BB2(LTE) of MT6797                                |
+|              |  DVDD_SRAM_MD       | 1                      | 1200           | MD Memory of MT6797                               |
+|              |  VS1_PMU            | 2                      | 2000           | Low Dropout LDO input                             |
+|              |  VS2+PMU            | 1.4                    | 2000           | Low Dropout LDO input                             |
+| LDO          |  VTCXO28_PMU        | 2.8                    | 40             | DAC of MT6797                                     |
+|              |  VTCXO24_PMU        | 2.375                  | 40             | NOT USE                                           |
+|              |  VSIM1_PMU          | 3                      | 100            | AVDD_USB_P1 of MT6797                             |
+|              |  VSIM2_PMU          | 3                      | 100            | DVDD28_SIM2 of MT6797                             |
+|              |  VCN18_PMU          | 1.8                    | 200            | connectivity                                      |
+|              |  VCN28_PMU          | 2.8                    | 40             | connectivity                                      |
+|              |  VCN33_PMU          | 3.3                    | 500            | connectivity                                      |
+|              |  VDRAM_LDO_PMU      | 1.21                   | 1200           | NOT USE                                           |
+|              |  VMIPI_PMU          | 1.8                    | 200            | MT8193                                            |
+|              |  VUSB33_PMU         | 3.07                   | 100            | USB power                                         |
+|              |  VUSB10_PMU         | 0.9                    | 300            | AP Analog module                                  |
+|              |  VIO28_PMU          | 2.8                    | 200            | TCXO                                              |
+|              |  VIO18_PMU          | 1.8                    | 1000           | 1.8V IO                                           |
+|              |  VBIF28_PMU         | 2.8                    | 20             | NOT USE                                           |
+|              |  VEFUSE_PMU         | 1.8                    | 200            | AP EFUSE                                          |
+|              |  VMC_PMU            | 3                      | 200            | DVDD of memory card                               |
+|              |  VMCH_PMU           | 3                      | 200            | SD card                                           |
+|              |  VEMC_3V3_PMU       | 3                      | 800            | EMMC                                              |
+|              |  VLDO28_PMU         | 2.8                    | 800            | MT8193                                            |
+|              |  VIBR_PMU           | 3                      | 200            | MT8193                                            |
+|              |  VGP3_PMU           | 1 ~ 1.8                | 300            | NOT USE                                           |
+|              |  VDCXO_PMU          | 2.2                    | 40             | NOT USE                                           |
+|              |  VA18               | 1.8                    | 300            | Audio/ABB                                         |
+|              |  VSRAM_PROC_PMU     | 0.6 ~ 1.2              | 250            | CPU1 SRAM power of MT6797                         |
+|              |  VRF12_PMU          | 1.2                    | 145            | MT8193                                            |
+|              |  VRTC               | 2.8                    | 2              | RTC                                               |
+|              |  3V3_LDO            | 3.3                    | 1000           | HDMI                                              |
+| Other        |  HDMI_5V            | 5                      | 700            | HDMI output voltage                               |
+|              |  VBUS_HOST1         | 5                      | 1200           | USB host1 output voltage(CON6401)                 |
+|              |  VBUS_HOST2         | 5                      | 1200           | USB host2 output voltage(CON6402)                 |
+|              |  VIO18_PMU          | 1.8                    | 200            | 1.8V on LS connector                              |
+|              |  SYS_5V             | 5                      | 2000           | 5V on LS connector                                |
+|              |  DC_IN              | 8 ~ 18                 | 1000           | 8-18V DCIN on LS connector as output              |
+|              |  DC_IN              | 8 ~ 18                 | 3000           | 8-18V DCIN on LS connector as input               |
 
 [Back to top]()
 
@@ -714,9 +777,13 @@ The user of the Helio X20 Development Board should never apply power to the boar
 
 < Add a drawing showing the mechanical layout, dimensions, distance between mounting holes, max. component height >
 
+< Please send any images to robert.wolff@linaro.org >
+
 ### 2D Reference Drawing
 
 < Example >
+
+< Please send any images to robert.wolff@linaro.org >
 
 <img src="http://i.imgur.com/IdPzJTU.png" data-canonical-src="http://i.imgur.com/IdPzJTU.png" width="750" height="480" />
 
