@@ -19,7 +19,7 @@ Learn about your Board-X board as well as how to prepare and set up for basic us
 **Optional**
 - MicroSD card with adapter
    - For quick and easy switching between operating systems and extra storage
-- [Mezzanine Products](../../../MezzanineProducts/README.md)
+- Mezzanine Products
    - These devices allow you to expand your experience with any 96Boards by adding peripherals and enhancing onboard components
 - USB to MicroUSB cable
    - This is needed for serial console interface and fastboot/adb commands
