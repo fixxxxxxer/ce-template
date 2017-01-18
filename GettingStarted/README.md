@@ -34,9 +34,9 @@ The following subsections should describe how to get started with the Board-X us
 
 < Please send all HD board images to robert.wolff@linaro.org to have these replaced >
 
-<img src="http://i.imgur.com/uKfxuu5.jpg" data-canonical-src="http://i.imgur.com/uKfxuu5.jpg" width="250" height="160" />
-<img src="http://i.imgur.com/g5X5j72.jpg" data-canonical-src="http://i.imgur.com/g5X5j72.jpg" width="250" height="160" />
-<img src="http://i.imgur.com/egwXwjX.jpg" data-canonical-src="http://i.imgur.com/egwXwjX.jpg" width="250" height="160" />
+<img src="" data-canonical-src="" width="250" height="160" />
+<img src="" data-canonical-src="" width="250" height="160" />
+<img src="" data-canonical-src="" width="250" height="160" />
 
 ## Features
 
