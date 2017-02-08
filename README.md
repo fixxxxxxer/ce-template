@@ -21,7 +21,7 @@ A comprehensive guide to using the [Board-x](96Boards.org product link here) Con
    - Discover our list of sponsored Board-x documents, these include User Guides and Application notes
 - [Hardware Documentation](HardwareDocs/README.md)
    - Explore what makes your Board-x unique, technical specifications, schematics, hardware notes and more...
-- [Support](Troubleshooting/README.md)
+- [Support](Support/README.md)
    - From bug reports and current issues, to forum access and other useful resources, we want to help you find answers
 
 ***
