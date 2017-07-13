@@ -10,7 +10,7 @@
 |:------------------|:------------------------------------|
 |Release Notes:     |[Link]()                             |
 
-Continue to [Installation page](../Installation/README.md)
+Continue to [Installation page](../installation/README.md)
 
 ***
 
@@ -32,4 +32,4 @@ Continue to [Installation page](../Installation/README.md)
 |:------------------|:----------------------------------|
 |Release Notes:     |[Link]()                           |
 
-Continue to [Installation page](../Installation/README.md)
+Continue to [Installation page](../installation/README.md)
